@@ -1,10 +1,12 @@
-
-const navWrap=document.querySelector('.nav');
-document.querySelector('.menu')?.addEventListener('click',()=>navWrap?.classList.toggle('open'));
-document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>navWrap?.classList.remove('open')));
-document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>{
-  e.preventDefault();
-  const btn=f.querySelector('button'); const old=btn.textContent;
-  btn.textContent='Talebiniz alındı ✓';
-  setTimeout(()=>btn.textContent=old,2500);
-}));
+function openProduct(name){
+  document.getElementById('modal-title').textContent=name;
+  document.getElementById('modal').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeProduct(e){
+  if(!e || e.target.id==='modal' || e.target.classList.contains('close')){
+    document.getElementById('modal').classList.remove('show');
+    document.body.style.overflow='';
+  }
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeProduct();});
