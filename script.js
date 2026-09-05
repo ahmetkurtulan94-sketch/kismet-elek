@@ -4,22 +4,15 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeProduct()});
 const q=document.getElementById('quoteForm');if(q){q.addEventListener('submit',e=>{e.preventDefault();const msg=`Merhaba, Kısmet Elek için teklif almak istiyorum.\n\nAd Soyad: ${document.getElementById('qname').value}\nTelefon: ${document.getElementById('qphone').value}\nÜrün: ${document.getElementById('qproduct').value}\nÖlçü/Adet: ${document.getElementById('qsize').value}\nNot: ${document.getElementById('qnote').value}`;window.open('https://wa.me/905469228020?text='+encodeURIComponent(msg),'_blank')})}
 const menu=document.querySelector('.menu');if(menu){menu.addEventListener('click',()=>{let n=document.querySelector('nav');if(n){n.style.display=n.style.display==='flex'?'none':'flex';n.style.flexDirection='column';n.style.position='absolute';n.style.top='82px';n.style.left='0';n.style.right='0';n.style.padding='18px 5%';n.style.background='#241b15';n.style.zIndex='20'}})}
 
-/* KISMET_WOOD_HOVER_FINAL */
-document.addEventListener('DOMContentLoaded', () => {
-  const choices = document.querySelectorAll('[data-wood-choice], [data-wood="kayın"], [data-wood="ceviz"]');
-  choices.forEach(choice => {
-    const wood = (choice.dataset.woodChoice || choice.dataset.wood || '').toLowerCase();
-    if (!['kayın','ceviz','kayın ağacı','ceviz ağacı'].includes(wood)) return;
-    const target = choice.closest('[data-kasnak], .product-card, .wood-showcase, .kasnak-card') ||
-                   document.querySelector('[data-kasnak], .kasnak-visual');
-    if (!target) return;
-    choice.addEventListener('mouseenter', () => {
-      target.classList.add('wood-hover-active');
-      target.dataset.activeWood = wood.startsWith('kayın') ? 'kayın' : 'ceviz';
-    });
-    choice.addEventListener('mouseleave', () => {
-      target.classList.remove('wood-hover-active');
-      target.removeAttribute('data-active-wood');
-    });
-  });
+/* FINAL fixed WhatsApp */
+document.addEventListener('DOMContentLoaded', function(){
+  if (!document.querySelector('.whatsapp-fixed')) {
+    const a=document.createElement('a');
+    a.className='whatsapp-fixed';
+    a.href='https://wa.me/905469228020';
+    a.target='_blank';
+    a.rel='noopener';
+    a.textContent='WhatsApp';
+    document.body.appendChild(a);
+  }
 });

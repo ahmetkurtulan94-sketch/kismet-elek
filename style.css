@@ -20,17 +20,14 @@
 .home-page .material-preview{position:absolute;z-index:14;left:66.2%;top:34.4%;width:33.2%;height:26.8%;pointer-events:none;opacity:0;background:linear-gradient(135deg,#d8bb8b 0 50%,#4b2d1e 50%);transition:.2s}.home-page .material-zone{position:absolute;z-index:26;background:transparent;border:0;cursor:pointer}.home-page .material-kayin{left:67.2%;top:38.5%;width:12%;height:8%}.home-page .material-ceviz{left:68%;top:49%;width:13%;height:9%}.home-page .site:has(.material-kayin:hover) .material-preview{opacity:.82;background:repeating-linear-gradient(90deg,#dfc397 0 5px,#b88b5d 5px 8px)}.home-page .site:has(.material-ceviz:hover) .material-preview{opacity:.82;background:repeating-linear-gradient(90deg,#704a34 0 5px,#351f14 5px 8px)}
 @media(max-width:700px){.home-page .site,.home-page .design{width:100vw;min-width:100vw}.home-page .material-zone{display:none}}
 
-/* Kısmet Elek - Kayın / Ceviz hover state */
-.wood-choice[data-wood],
-.wood-option[data-wood],
-[data-wood="kayın"], [data-wood="kayın"] *,
-[data-wood="ceviz"], [data-wood="ceviz"] * { cursor: pointer; }
+/* FINAL FULLSCREEN OVERRIDE — existing design only */
+html, body { margin:0 !important; padding:0 !important; width:100% !important; overflow-x:hidden; }
+.site, .design, .page, .homepage { width:100vw !important; max-width:none !important; margin-left:0 !important; margin-right:0 !important; }
+.design img, .hero-image, .main-design-image { width:100vw !important; max-width:none !important; display:block; }
 
-.kasnak-visual { transition: filter .25s ease, background-image .25s ease, transform .25s ease; }
-
-.wood-hover-active .kasnak-visual.kayin {
-  background-image: var(--kayın-image) !important;
-}
-.wood-hover-active .kasnak-visual.ceviz {
-  background-image: var(--ceviz-image) !important;
+.whatsapp-fixed{
+ position:fixed!important; right:22px!important; bottom:22px!important; z-index:99999!important;
+ padding:12px 18px; border-radius:999px; background:#25D366; color:#fff!important;
+ text-decoration:none!important; font:600 14px/1.1 Arial,sans-serif;
+ box-shadow:0 8px 24px rgba(0,0,0,.28);
 }

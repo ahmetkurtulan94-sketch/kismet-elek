@@ -7,42 +7,57 @@
 <meta name="description" content="Kısmet Elek ahşap kasnak atölyesi. Tef, bendir ve davul kasnakları.">
 <meta name="google-site-verification" content="JSMN0QMk11Q3IamoAx5s6ykKZd6hjL00fd0hNvatzoo">
 <style>
-*{box-sizing:border-box}html,body{margin:0;padding:0;background:#0d0b09}body{font-family:Arial,sans-serif}.site{position:relative;width:100%;max-width:1164px;margin:0 auto;line-height:0}.design{display:block;width:100%;height:auto}.hit{position:absolute;z-index:10;display:block;line-height:normal;border:0;background:transparent}.hit:hover{background:rgba(255,255,255,.035)}
-.home{left:28%;top:.7%;width:9%;height:5%}.products{left:38.5%;top:.7%;width:9%;height:5%}.atelier{left:47%;top:.7%;width:8%;height:5%}.about{left:54%;top:.7%;width:10%;height:5%}.contact{left:63%;top:.7%;width:8%;height:5%}.phone{left:72%;top:.5%;width:15%;height:6%}.instagram{left:87%;top:.5%;width:4.5%;height:6%}.facebook{left:92%;top:.5%;width:5%;height:6%}
-.p1{left:2.5%;top:42%;width:19%;height:20%}.p2{left:23.2%;top:42%;width:20%;height:20%}.p3{left:44.5%;top:42%;width:20%;height:20%}.all{left:53%;top:37.3%;width:12%;height:5%}.material{left:66%;top:38%;width:32%;height:24%}.atelierBtn{left:5%;top:88.2%;width:18%;height:5%}.wa{right:.5%;bottom:.5%;width:6%;height:6.5%;border-radius:50%}
-.wood-hover{position:absolute;z-index:11;display:block;border:0;background:transparent;cursor:pointer}.wood-hover:after{content:'';position:absolute;inset:-5px;border-radius:50%;opacity:0;transform:scale(.92);transition:.25s ease;pointer-events:none}.wood-hover:hover:after{opacity:1;transform:scale(1)}
-/* swatch positions inside each product card; hover gives a clear material cue without changing the base artwork */
-.w1k,.w1c{top:57.5%;height:4.2%;width:4.5%}.w1k{left:3.8%}.w1c{left:14.0%}.w2k,.w2c{top:57.5%;height:4.2%;width:4.5%}.w2k{left:24.5%}.w2c{left:35.0%}.w3k,.w3c{top:57.5%;height:4.2%;width:4.5%}.w3k{left:45.7%}.w3c{left:56.2%}
-.w1k:after,.w2k:after,.w3k:after{background:radial-gradient(circle at 35% 35%,#e9d3ae,#b99162 58%,#8b6848)}.w1c:after,.w2c:after,.w3c:after{background:radial-gradient(circle at 35% 35%,#6b4a35,#2b1a12 62%,#160e0a)}
-.ring-hover{position:absolute;z-index:9;opacity:0;pointer-events:none;transition:.22s ease;transform:scale(.96)}.ring1{left:5%;top:39%;width:17%;height:10%}.ring2{left:26%;top:39%;width:17%;height:10%}.ring3{left:47%;top:38%;width:16%;height:13%}.ring-hover.kayin{border:16px solid #c49a69;border-radius:50%;background:repeating-linear-gradient(90deg,#d9bb8d 0 4px,#b68a5a 4px 7px);box-shadow:inset 0 0 0 2px rgba(255,255,255,.35),0 8px 16px rgba(30,18,10,.2)}.ring-hover.ceviz{border:16px solid #4a2b1d;border-radius:50%;background:repeating-linear-gradient(90deg,#704b36 0 4px,#352015 4px 7px);box-shadow:inset 0 0 0 2px rgba(255,255,255,.15),0 8px 16px rgba(30,18,10,.28)}.site:has(.w1k:hover) .ring1k,.site:has(.w2k:hover) .ring2k,.site:has(.w3k:hover) .ring3k,.site:has(.w1c:hover) .ring1c,.site:has(.w2c:hover) .ring2c,.site:has(.w3c:hover) .ring3c{opacity:1;transform:scale(1)}.wood-tip{position:absolute;z-index:12;left:0;right:0;top:61.3%;text-align:center;font:600 10px/1.2 Arial,sans-serif;letter-spacing:.7px;color:#6c5946;opacity:0;pointer-events:none;transition:.2s}.site:has(.w1k:hover) .tip1k,.site:has(.w1c:hover) .tip1c,.site:has(.w2k:hover) .tip2k,.site:has(.w2c:hover) .tip2c,.site:has(.w3k:hover) .tip3k,.site:has(.w3c:hover) .tip3c{opacity:1}
-@media(max-width:700px){.site{width:100%}.wood-tip{font-size:8px}}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;width:100%;min-height:100%;background:#0d0b09;overflow-x:hidden}
+body{font-family:Arial,sans-serif}
+.site{position:relative;width:100vw;max-width:none;margin:0;line-height:0}
+.design{display:block;width:100vw;height:auto;max-width:none;margin:0}
+.hit,.wood-hot,.step-hot{position:absolute;display:block;border:0;background:transparent;cursor:pointer;z-index:30}
+.hit:hover,.wood-hot:hover,.step-hot:hover{background:rgba(255,255,255,.025)}
+/* top navigation */
+.home{left:37.0%;top:.8%;width:7.2%;height:4.5%}.products{left:42.0%;top:.8%;width:7.3%;height:4.5%}.atelier{left:47.0%;top:.8%;width:6.8%;height:4.5%}.about{left:51.7%;top:.8%;width:8.0%;height:4.5%}.contact{left:57.2%;top:.8%;width:7.0%;height:4.5%}
+.phone{left:69.0%;top:.7%;width:13.0%;height:5.0%}.instagram{left:83.0%;top:.6%;width:4.5%;height:5.5%}.facebook{left:88.3%;top:.6%;width:4.8%;height:5.5%}
+/* product cards */
+.p1{left:1.2%;top:39.5%;width:21.2%;height:22.0%}.p2{left:22.9%;top:39.5%;width:21.4%;height:22.0%}.p3{left:44.6%;top:39.5%;width:21.0%;height:22.0%}.all{left:54.0%;top:35.5%;width:10.0%;height:4.8%}
+.material{left:65.7%;top:34.0%;width:33.5%;height:28.0%}
+.atelierBtn{left:5.0%;top:88.0%;width:18%;height:5%}
+/* material hover zones are exactly the existing labels in the right panel */
+.material-kayin{left:67.0%;top:38.0%;width:10.5%;height:8.0%}.material-ceviz{left:66.8%;top:48.0%;width:12.0%;height:10.0%}
+/* 01 / 02 / 03 are real navigation controls */
+.step1{left:21.3%;top:48.2%;width:3.2%;height:3.5%}.step2{left:25.0%;top:48.2%;width:3.2%;height:3.5%}.step3{left:28.8%;top:48.2%;width:3.2%;height:3.5%}
+/* floating WhatsApp always visible */
+.wa-fixed{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;text-decoration:none;font:700 11px/1 Arial,sans-serif;z-index:99999;box-shadow:0 8px 25px rgba(0,0,0,.28)}
+.wa-fixed::before{content:'WhatsApp';position:absolute;white-space:nowrap;right:68px;background:#fff;color:#222;padding:8px 11px;border-radius:8px;font:600 11px Arial;opacity:0;transform:translateX(5px);transition:.2s;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+.wa-fixed:hover::before{opacity:1;transform:none}
+/* same existing kasnak location: only an image patch is revealed; no second ring is added */
+.ring-state{position:absolute;z-index:25;display:none;pointer-events:none;object-fit:contain}
+.wood-hot:hover~.ring-state{display:block}
+.r1k{left:4.29553%;top:43.67135%;width:22.33677%;height:13.32346%}
+.r1c{left:4.29553%;top:43.67135%;width:22.33677%;height:13.32346%}
+.r2k{left:27.92096%;top:42.93116%;width:21.90722%;height:12.95337%}
+.r2c{left:27.92096%;top:42.93116%;width:21.90722%;height:12.95337%}
+.r3k{left:48.96907%;top:41.82087%;width:21.90722%;height:13.69356%}
+.r3c{left:48.96907%;top:41.82087%;width:21.90722%;height:13.69356%}
+.site:has(.w1k:hover) .r1k,.site:has(.w1c:hover) .r1c,.site:has(.w2k:hover) .r2k,.site:has(.w2c:hover) .r2c,.site:has(.w3k:hover) .r3k,.site:has(.w3c:hover) .r3c{display:block}
+.w1k{left:4.0%;top:54.0%;width:5.5%;height:5.2%}.w1c{left:14.1%;top:54.0%;width:5.5%;height:5.2%}
+.w2k{left:25.5%;top:54.0%;width:5.5%;height:5.2%}.w2c{left:35.8%;top:54.0%;width:5.5%;height:5.2%}
+.w3k{left:47.0%;top:54.0%;width:5.5%;height:5.2%}.w3c{left:57.2%;top:54.0%;width:5.5%;height:5.2%}
+@media(max-width:700px){.wa-fixed{right:14px;bottom:14px;width:52px;height:52px}}
 </style>
 </head>
-<body class="home-page">
+<body>
 <main class="site">
-  <img class="design" src="assets/ana-sayfa-tasarim-hd.jpg" alt="Kısmet Elek Ahşap Kasnak Atölyesi">
-  <a class="hit home" href="index.html" aria-label="Ana Sayfa"></a>
-  <a class="hit products" href="urunler.html" aria-label="Ürünler"></a>
-  <a class="hit atelier" href="hakkimizda.html" aria-label="Atölye"></a>
-  <a class="hit about" href="hakkimizda.html" aria-label="Hakkımızda"></a>
-  <a class="hit contact" href="iletisim.html" aria-label="İletişim"></a>
-  <a class="hit phone" href="tel:+905469228020" aria-label="0546 922 80 20"></a>
-  <a class="hit instagram" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"></a>
-  <a class="hit facebook" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"></a>
-  <a class="hit p1" href="urunler.html#tef" aria-label="Tef Kasnakları"></a>
-  <a class="hit p2" href="urunler.html#bendir" aria-label="Bendir Kasnakları"></a>
-  <a class="hit p3" href="urunler.html#davul" aria-label="Davul Kasnakları"></a>
-  <a class="hit all" href="urunler.html" aria-label="Tüm Ürünleri Gör"></a>
-  <a class="hit material" href="urunler.html#malzeme" aria-label="Kayın ve Ceviz detayları"></a>
-  <a class="hit atelierBtn" href="hakkimizda.html" aria-label="Atölyeyi Keşfet"></a>
-  <a class="hit wa" href="https://wa.me/905469228020" target="_blank" rel="noopener" aria-label="WhatsApp"></a>
-  <span class="ring-hover kayin ring1 ring1k"></span><span class="ring-hover ceviz ring1 ring1c"></span>
-  <span class="ring-hover kayin ring2 ring2k"></span><span class="ring-hover ceviz ring2 ring2c"></span>
-  <span class="ring-hover kayin ring3 ring3k"></span><span class="ring-hover ceviz ring3 ring3c"></span>
-  <span class="wood-hover w1k" aria-label="Tef kayın"></span><span class="wood-hover w1c" aria-label="Tef ceviz"></span>
-  <span class="wood-hover w2k" aria-label="Bendir kayın"></span><span class="wood-hover w2c" aria-label="Bendir ceviz"></span>
-  <span class="wood-hover w3k" aria-label="Davul kayın"></span><span class="wood-hover w3c" aria-label="Davul ceviz"></span>
-  
+<img class="design" src="assets/ana-sayfa-tasarim-hd.jpg" alt="Kısmet Elek Ahşap Kasnak Atölyesi">
+<a class="hit home" href="index.html" aria-label="Ana Sayfa"></a><a class="hit products" href="urunler.html" aria-label="Ürünler"></a><a class="hit atelier" href="hakkimizda.html#atolye" aria-label="Atölye"></a><a class="hit about" href="hakkimizda.html" aria-label="Hakkımızda"></a><a class="hit contact" href="iletisim.html" aria-label="İletişim"></a>
+<a class="hit phone" href="tel:+905469228020" aria-label="0546 922 80 20"></a><a class="hit instagram" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"></a><a class="hit facebook" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"></a>
+<a class="hit p1" href="urunler.html#tef" aria-label="Tef Kasnakları"></a><a class="hit p2" href="urunler.html#bendir" aria-label="Bendir Kasnakları"></a><a class="hit p3" href="urunler.html#davul" aria-label="Davul Kasnakları"></a><a class="hit all" href="urunler.html" aria-label="Tüm Ürünleri Gör"></a>
+<a class="hit material" href="urunler.html#malzeme" aria-label="Kayın ve Ceviz"></a><a class="hit atelierBtn" href="hakkimizda.html#atolye" aria-label="Atölyeyi Keşfet"></a>
+<a class="step-hot step1" href="urunler.html#tef" aria-label="Tef"></a><a class="step-hot step2" href="urunler.html#bendir" aria-label="Bendir"></a><a class="step-hot step3" href="urunler.html#davul" aria-label="Davul"></a>
+<a class="wood-hot w1k" href="urunler.html#tef-kayin" aria-label="Tef Kayın"></a><a class="wood-hot w1c" href="urunler.html#tef-ceviz" aria-label="Tef Ceviz"></a>
+<a class="wood-hot w2k" href="urunler.html#bendir-kayin" aria-label="Bendir Kayın"></a><a class="wood-hot w2c" href="urunler.html#bendir-ceviz" aria-label="Bendir Ceviz"></a>
+<a class="wood-hot w3k" href="urunler.html#davul-kayin" aria-label="Davul Kayın"></a><a class="wood-hot w3c" href="urunler.html#davul-ceviz" aria-label="Davul Ceviz"></a>
+<img class="ring-state r1k" src="assets/wood_states/ring1-kayin.png" alt=""><img class="ring-state r1c" src="assets/wood_states/ring1-ceviz.png" alt=""><img class="ring-state r2k" src="assets/wood_states/ring2-kayin.png" alt=""><img class="ring-state r2c" src="assets/wood_states/ring2-ceviz.png" alt=""><img class="ring-state r3k" src="assets/wood_states/ring3-kayin.png" alt=""><img class="ring-state r3c" src="assets/wood_states/ring3-ceviz.png" alt="">
+<a class="material-kayin" href="urunler.html#kayın" aria-label="Kayın ağacı"></a><a class="material-ceviz" href="urunler.html#ceviz" aria-label="Ceviz ağacı"></a>
 </main>
-</body>
-</html>
+<a class="wa-fixed" href="https://wa.me/905469228020" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+</body></html>
