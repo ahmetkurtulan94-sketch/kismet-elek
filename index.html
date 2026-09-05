@@ -7,41 +7,20 @@
 <meta name="description" content="Kısmet Elek ahşap kasnak atölyesi. Tef, bendir ve davul kasnakları.">
 <meta name="google-site-verification" content="JSMN0QMk11Q3IamoAx5s6ykKZd6hjL00fd0hNvatzoo">
 <style>
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:#111}
-body{font-family:Arial,sans-serif}
-.site{position:relative;width:100vw;max-width:none;margin:0;line-height:0}
-.design{display:block;width:100vw;height:auto}
-.hit{position:absolute;z-index:10;display:block;line-height:normal;border:0;background:transparent}
-.hit:hover{background:rgba(255,255,255,.035)}
-/* header */
-.home{left:28%;top:.7%;width:9%;height:5%}
-.products{left:38.5%;top:.7%;width:9%;height:5%}
-.atelier{left:47%;top:.7%;width:8%;height:5%}
-.about{left:54%;top:.7%;width:10%;height:5%}
-.contact{left:63%;top:.7%;width:8%;height:5%}
-.phone{left:72%;top:.5%;width:15%;height:6%}
-.instagram{left:87%;top:.5%;width:4.5%;height:6%}
-.facebook{left:92%;top:.5%;width:5%;height:6%}
-/* products */
-.p1{left:2.5%;top:42%;width:19%;height:20%}
-.p2{left:23.2%;top:42%;width:20%;height:20%}
-.p3{left:44.5%;top:42%;width:20%;height:20%}
-.all{left:53%;top:37.3%;width:12%;height:5%}
-.material{left:66%;top:38%;width:32%;height:24%}
-/* atelier */
-.atelierBtn{left:5%;top:88.2%;width:18%;height:5%}
-/* floating whatsapp */
-.wa{right:.5%;bottom:.5%;width:6%;height:6.5%;border-radius:50%}
-
-@media(max-width:600px){
- .site{width:100%}
-}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:#0d0b09}body{font-family:Arial,sans-serif}.site{position:relative;width:100%;max-width:1164px;margin:0 auto;line-height:0}.design{display:block;width:100%;height:auto}.hit{position:absolute;z-index:10;display:block;line-height:normal;border:0;background:transparent}.hit:hover{background:rgba(255,255,255,.035)}
+.home{left:28%;top:.7%;width:9%;height:5%}.products{left:38.5%;top:.7%;width:9%;height:5%}.atelier{left:47%;top:.7%;width:8%;height:5%}.about{left:54%;top:.7%;width:10%;height:5%}.contact{left:63%;top:.7%;width:8%;height:5%}.phone{left:72%;top:.5%;width:15%;height:6%}.instagram{left:87%;top:.5%;width:4.5%;height:6%}.facebook{left:92%;top:.5%;width:5%;height:6%}
+.p1{left:2.5%;top:42%;width:19%;height:20%}.p2{left:23.2%;top:42%;width:20%;height:20%}.p3{left:44.5%;top:42%;width:20%;height:20%}.all{left:53%;top:37.3%;width:12%;height:5%}.material{left:66%;top:38%;width:32%;height:24%}.atelierBtn{left:5%;top:88.2%;width:18%;height:5%}.wa{right:.5%;bottom:.5%;width:6%;height:6.5%;border-radius:50%}
+.wood-hover{position:absolute;z-index:11;display:block;border:0;background:transparent;cursor:pointer}.wood-hover:after{content:'';position:absolute;inset:-5px;border-radius:50%;opacity:0;transform:scale(.92);transition:.25s ease;pointer-events:none}.wood-hover:hover:after{opacity:1;transform:scale(1)}
+/* swatch positions inside each product card; hover gives a clear material cue without changing the base artwork */
+.w1k,.w1c{top:57.5%;height:4.2%;width:4.5%}.w1k{left:3.8%}.w1c{left:14.0%}.w2k,.w2c{top:57.5%;height:4.2%;width:4.5%}.w2k{left:24.5%}.w2c{left:35.0%}.w3k,.w3c{top:57.5%;height:4.2%;width:4.5%}.w3k{left:45.7%}.w3c{left:56.2%}
+.w1k:after,.w2k:after,.w3k:after{background:radial-gradient(circle at 35% 35%,#e9d3ae,#b99162 58%,#8b6848)}.w1c:after,.w2c:after,.w3c:after{background:radial-gradient(circle at 35% 35%,#6b4a35,#2b1a12 62%,#160e0a)}
+.ring-hover{position:absolute;z-index:9;opacity:0;pointer-events:none;transition:.22s ease;transform:scale(.96)}.ring1{left:5%;top:39%;width:17%;height:10%}.ring2{left:26%;top:39%;width:17%;height:10%}.ring3{left:47%;top:38%;width:16%;height:13%}.ring-hover.kayin{border:16px solid #c49a69;border-radius:50%;background:repeating-linear-gradient(90deg,#d9bb8d 0 4px,#b68a5a 4px 7px);box-shadow:inset 0 0 0 2px rgba(255,255,255,.35),0 8px 16px rgba(30,18,10,.2)}.ring-hover.ceviz{border:16px solid #4a2b1d;border-radius:50%;background:repeating-linear-gradient(90deg,#704b36 0 4px,#352015 4px 7px);box-shadow:inset 0 0 0 2px rgba(255,255,255,.15),0 8px 16px rgba(30,18,10,.28)}.site:has(.w1k:hover) .ring1k,.site:has(.w2k:hover) .ring2k,.site:has(.w3k:hover) .ring3k,.site:has(.w1c:hover) .ring1c,.site:has(.w2c:hover) .ring2c,.site:has(.w3c:hover) .ring3c{opacity:1;transform:scale(1)}.wood-tip{position:absolute;z-index:12;left:0;right:0;top:61.3%;text-align:center;font:600 10px/1.2 Arial,sans-serif;letter-spacing:.7px;color:#6c5946;opacity:0;pointer-events:none;transition:.2s}.site:has(.w1k:hover) .tip1k,.site:has(.w1c:hover) .tip1c,.site:has(.w2k:hover) .tip2k,.site:has(.w2c:hover) .tip2c,.site:has(.w3k:hover) .tip3k,.site:has(.w3c:hover) .tip3c{opacity:1}
+@media(max-width:700px){.site{width:100%}.wood-tip{font-size:8px}}
 </style>
 </head>
 <body>
 <main class="site">
-  <img class="design" src="assets/ana-sayfa-tasarim.png" alt="Kısmet Elek Ahşap Kasnak Atölyesi">
+  <img class="design" src="assets/ana-sayfa-tasarim-hd.jpg" alt="Kısmet Elek Ahşap Kasnak Atölyesi">
   <a class="hit home" href="index.html" aria-label="Ana Sayfa"></a>
   <a class="hit products" href="urunler.html" aria-label="Ürünler"></a>
   <a class="hit atelier" href="hakkimizda.html" aria-label="Atölye"></a>
@@ -57,6 +36,15 @@ body{font-family:Arial,sans-serif}
   <a class="hit material" href="urunler.html#malzeme" aria-label="Kayın ve Ceviz detayları"></a>
   <a class="hit atelierBtn" href="hakkimizda.html" aria-label="Atölyeyi Keşfet"></a>
   <a class="hit wa" href="https://wa.me/905469228020" target="_blank" rel="noopener" aria-label="WhatsApp"></a>
+  <span class="ring-hover kayin ring1 ring1k"></span><span class="ring-hover ceviz ring1 ring1c"></span>
+  <span class="ring-hover kayin ring2 ring2k"></span><span class="ring-hover ceviz ring2 ring2c"></span>
+  <span class="ring-hover kayin ring3 ring3k"></span><span class="ring-hover ceviz ring3 ring3c"></span>
+  <span class="wood-hover w1k" aria-label="Tef kayın üzerinde göster"></span><span class="wood-hover w1c" aria-label="Tef ceviz üzerinde göster"></span>
+  <span class="wood-hover w2k" aria-label="Bendir kayın üzerinde göster"></span><span class="wood-hover w2c" aria-label="Bendir ceviz üzerinde göster"></span>
+  <span class="wood-hover w3k" aria-label="Davul kayın üzerinde göster"></span><span class="wood-hover w3c" aria-label="Davul ceviz üzerinde göster"></span>
+  <span class="wood-tip tip1k">KAYIN · AÇIK TON</span><span class="wood-tip tip1c">CEVİZ · KOYU TON</span>
+  <span class="wood-tip tip2k">KAYIN · AÇIK TON</span><span class="wood-tip tip2c">CEVİZ · KOYU TON</span>
+  <span class="wood-tip tip3k">KAYIN · AÇIK TON</span><span class="wood-tip tip3c">CEVİZ · KOYU TON</span>
 </main>
 </body>
 </html>
