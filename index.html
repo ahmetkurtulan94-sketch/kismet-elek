@@ -4,126 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KISMET ELEK | Ahşap Kasnak Atölyesi</title>
-<meta name="description" content="Kayın ve ceviz ağacından tef, bendir, davul ve özel ölçü ahşap kasnak üretimi.">
-<link rel="stylesheet" href="style.css">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#111;min-height:100%;font-family:Arial,sans-serif}
+.page{position:relative;width:min(100vw,1164px);margin:0 auto}
+.page img{display:block;width:100%;height:auto}
+.hotspot{position:absolute;display:block;z-index:5}
+.hotspot.home{left:28%;top:1.2%;width:9%;height:5%}
+.hotspot.products{left:39%;top:1.2%;width:9%;height:5%}
+.hotspot.atelier{left:47%;top:1.2%;width:8%;height:5%}
+.hotspot.about{left:54%;top:1.2%;width:10%;height:5%}
+.hotspot.contact{left:63%;top:1.2%;width:8%;height:5%}
+.hotspot.phone{left:73%;top:1%;width:14%;height:6%}
+.hotspot.instagram{left:87%;top:1%;width:5%;height:6%}
+.hotspot.facebook{left:92%;top:1%;width:5%;height:6%}
+.hotspot.product1{left:2.5%;top:41.8%;width:19%;height:21%}
+.hotspot.product2{left:23.2%;top:41.8%;width:20%;height:21%}
+.hotspot.product3{left:44.5%;top:41.8%;width:20%;height:21%}
+.hotspot.allproducts{left:54%;top:37.5%;width:10%;height:4%}
+.hotspot.material{left:66%;top:38%;width:32%;height:24%}
+.hotspot.atelierbtn{left:5%;top:88%;width:17%;height:4%}
+.hotspot.whatsapp{right:1%;bottom:1%;width:7%;height:7%}
+@media(max-width:600px){
+  .page{width:100vw}
+  .hotspot{ /* transparent hit areas scale with the image */ }
+}
+</style>
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="index.html">
-    <span>KISMET ELEK</span><small>AHŞAP KASNAK ATÖLYESİ</small>
-  </a>
-  <nav>
-    <a class="active" href="index.html">ANA SAYFA</a>
-    <a href="#urunler">ÜRÜNLER</a>
-    <a href="#atolye">ATÖLYE</a>
-    <a href="hakkimizda.html">HAKKIMIZDA</a>
-    <a href="iletisim.html">İLETİŞİM</a>
-  </nav>
-  <div class="header-right">
-    <a href="tel:+905469228020">0546 922 80 20</a>
-    <a href="#" aria-label="Instagram">◎</a>
-    <a href="#" aria-label="Facebook">f</a>
-  </div>
-</header>
-
-<main>
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">GELENEKTEN GELECEĞE</p>
-    <h1>Ahşapta<br><em>Nesiller Buluşur</em></h1>
-    <p class="lead">Tef, bendir, davul ve özel ölçü kasnak üretiminde ustalık, kalite ve güven.</p>
-    <a class="btn" href="#urunler">ÜRÜNLERİ İNCELE <span>→</span></a>
-    <div class="hero-features">
-      <div><b>◌</b><span>DOĞAL<br>AHŞAP</span></div>
-      <div><b>◇</b><span>SAĞLAM<br>ÜRETİM</span></div>
-      <div><b>⌁</b><span>ÖZEL ÖLÇÜ<br>İMKANI</span></div>
-    </div>
-  </div>
-  <div class="hero-photo">
-    <div class="hero-photo-overlay"></div>
-  </div>
-  <div class="hero-side">DOĞAL AĞAÇ<br>UZUN ÖMÜR<br>GERÇEK İŞÇİLİK</div>
-</section>
-
-<section id="urunler" class="products-section">
-  <div class="section-head">
-    <div><p class="eyebrow dark">ÜRETİMİMİZ</p><h2>Ürünlerimiz</h2><p>Geleneksel ölçüler, kaliteli işçilik.</p></div>
-    <span class="all-products">Tüm Ürünleri Gör →</span>
-  </div>
-
-  <div class="products-grid">
-    <article class="product-card">
-      <div class="product-visual tef"></div>
-      <div class="product-info"><span>01</span><h3>Tef Kasnakları</h3><button onclick="openProduct('Tef Kasnağı')">DETAYLAR <b>→</b></button></div>
-    </article>
-    <article class="product-card">
-      <div class="product-visual bendir"></div>
-      <div class="product-info"><span>02</span><h3>Bendir Kasnakları</h3><button onclick="openProduct('Bendir Kasnağı')">DETAYLAR <b>→</b></button></div>
-    </article>
-    <article class="product-card">
-      <div class="product-visual davul"></div>
-      <div class="product-info"><span>03</span><h3>Davul Kasnakları</h3><button onclick="openProduct('Davul Kasnağı')">DETAYLAR <b>→</b></button></div>
-    </article>
-  </div>
-
-  <div class="material-showcase">
-    <div class="material-copy">
-      <p class="eyebrow dark">AĞAÇ SEÇENEKLERİ</p>
-      <h2>Doğal<br>Malzeme</h2>
-      <p>Her kasnağı aynı üründe iki ağacı karıştırarak değil, <strong>Kayın veya Ceviz</strong> olarak ayrı ayrı üretebiliriz.</p>
-      <div class="wood-options">
-        <div class="wood beech"><span>KAYIN</span><small>Açık ton · doğal doku</small></div>
-        <div class="wood walnut"><span>CEVİZ</span><small>Koyu ton · belirgin doku</small></div>
-      </div>
-    </div>
-    <div class="angle-demo">
-      <div class="split-ring"><span>KAYIN</span><span>CEVİZ</span></div>
-      <p>45° ahşap geçişi, yalnızca iki ağaç seçeneğinin farkını görsel olarak anlatır.</p>
-    </div>
-  </div>
-
-  <div class="feature-bar">
-    <div><b>✦</b><strong>1. SINIF KALİTE</strong><small>Seçkin kayın ve ceviz</small></div>
-    <div><b>⌁</b><strong>FIRINLANMIŞ AHŞAP</strong><small>Dengeli nem, uzun ömür</small></div>
-    <div><b>⚒</b><strong>USTA İŞÇİLİĞİ</strong><small>El emeği, titiz üretim</small></div>
-    <div><b>▱</b><strong>TÜRKİYE GENELİ</strong><small>Güvenli gönderim</small></div>
-  </div>
-</section>
-
-<section id="atolye" class="atelier">
-  <div class="atelier-photo"></div>
-  <div class="atelier-copy">
-    <p class="eyebrow">ATÖLYEMİZ</p>
-    <h2>Ahşabın<br>İşlendiği Yer</h2>
-    <p>Tef, bendir, davul ve özel ölçü kasnak üretiminde yılların tecrübesi, doğallığın güvencesi.</p>
-    <a class="btn light" href="iletisim.html">ATÖLYEYİ KEŞFET →</a>
-  </div>
-</section>
-</main>
-
-<footer>
-  <div><strong>KISMET ELEK</strong><span>AHŞAP KASNAK ATÖLYESİ</span></div>
-  <div>0546 922 80 20 · ahmetkurtulan94@gmail.com</div>
-</footer>
-
-<a class="whatsapp" href="https://wa.me/905469228020" target="_blank" rel="noopener" aria-label="WhatsApp">◔</a>
-
-<div id="modal" class="modal" onclick="closeProduct(event)">
-  <div class="modal-box">
-    <button class="close" onclick="closeProduct()">×</button>
-    <p class="eyebrow dark">ÜRÜN DETAYI</p>
-    <h2 id="modal-title">Kasnak</h2>
-    <p>Ürünümüzü <strong>Kayın</strong> veya <strong>Ceviz</strong> ağacından ayrı ayrı hazırlayabiliriz.</p>
-    <div class="detail-grid">
-      <div><small>AĞAÇ</small><strong>Kayın / Ceviz</strong></div>
-      <div><small>KALİTE</small><strong>1. Sınıf</strong></div>
-      <div><small>AHŞAP</small><strong>Fırınlanmış</strong></div>
-      <div><small>İŞÇİLİK</small><strong>Usta üretimi</strong></div>
-    </div>
-    <a class="btn" href="https://wa.me/905469228020?text=Kasnak%20hakkında%20bilgi%20almak%20istiyorum." target="_blank">WHATSAPP'TAN BİLGİ AL →</a>
-  </div>
+<div class="page">
+  <img src="assets/ana-sayfa-birebir.png" alt="Kısmet Elek ana sayfa">
+  <a class="hotspot home" href="index.html" aria-label="Ana Sayfa"></a>
+  <a class="hotspot products" href="urunler.html" aria-label="Ürünler"></a>
+  <a class="hotspot atelier" href="#atolye" aria-label="Atölye"></a>
+  <a class="hotspot about" href="hakkimizda.html" aria-label="Hakkımızda"></a>
+  <a class="hotspot contact" href="iletisim.html" aria-label="İletişim"></a>
+  <a class="hotspot phone" href="tel:+905469228020" aria-label="Telefon"></a>
+  <a class="hotspot instagram" href="#" aria-label="Instagram"></a>
+  <a class="hotspot facebook" href="#" aria-label="Facebook"></a>
+  <a class="hotspot product1" href="urunler.html" aria-label="Tef Kasnakları"></a>
+  <a class="hotspot product2" href="urunler.html" aria-label="Bendir Kasnakları"></a>
+  <a class="hotspot product3" href="urunler.html" aria-label="Davul Kasnakları"></a>
+  <a class="hotspot allproducts" href="urunler.html" aria-label="Tüm Ürünleri Gör"></a>
+  <a class="hotspot material" href="urunler.html" aria-label="Kayın ve Ceviz detayları"></a>
+  <a class="hotspot atelierbtn" href="hakkimizda.html" aria-label="Atölyeyi Keşfet"></a>
+  <a class="hotspot whatsapp" href="https://wa.me/905469228020" aria-label="WhatsApp"></a>
 </div>
-
-<script src="script.js"></script>
 </body>
 </html>
