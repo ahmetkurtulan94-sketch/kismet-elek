@@ -1,55 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>KISMET ELEK | Ahşap Kasnak Atölyesi</title>
+<meta name="description" content="Kısmet Elek ahşap kasnak atölyesi. Tef, bendir ve davul kasnakları.">
+<meta name="google-site-verification" content="JSMN0QMk11Q3IamoAx5s6ykKZd6hjL00fd0hNvatzoo">
 <style>
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:#111;min-height:100%;font-family:Arial,sans-serif}
-.page{position:relative;width:min(100vw,1164px);margin:0 auto}
-.page img{display:block;width:100%;height:auto}
-.hotspot{position:absolute;display:block;z-index:5}
-.hotspot.home{left:28%;top:1.2%;width:9%;height:5%}
-.hotspot.products{left:39%;top:1.2%;width:9%;height:5%}
-.hotspot.atelier{left:47%;top:1.2%;width:8%;height:5%}
-.hotspot.about{left:54%;top:1.2%;width:10%;height:5%}
-.hotspot.contact{left:63%;top:1.2%;width:8%;height:5%}
-.hotspot.phone{left:73%;top:1%;width:14%;height:6%}
-.hotspot.instagram{left:87%;top:1%;width:5%;height:6%}
-.hotspot.facebook{left:92%;top:1%;width:5%;height:6%}
-.hotspot.product1{left:2.5%;top:41.8%;width:19%;height:21%}
-.hotspot.product2{left:23.2%;top:41.8%;width:20%;height:21%}
-.hotspot.product3{left:44.5%;top:41.8%;width:20%;height:21%}
-.hotspot.allproducts{left:54%;top:37.5%;width:10%;height:4%}
-.hotspot.material{left:66%;top:38%;width:32%;height:24%}
-.hotspot.atelierbtn{left:5%;top:88%;width:17%;height:4%}
-.hotspot.whatsapp{right:1%;bottom:1%;width:7%;height:7%}
+html,body{margin:0;padding:0;background:#111}
+body{font-family:Arial,sans-serif}
+.site{position:relative;width:100vw;max-width:none;margin:0;line-height:0}
+.design{display:block;width:100vw;height:auto}
+.hit{position:absolute;z-index:10;display:block;line-height:normal;border:0;background:transparent}
+.hit:hover{background:rgba(255,255,255,.035)}
+/* header */
+.home{left:28%;top:.7%;width:9%;height:5%}
+.products{left:38.5%;top:.7%;width:9%;height:5%}
+.atelier{left:47%;top:.7%;width:8%;height:5%}
+.about{left:54%;top:.7%;width:10%;height:5%}
+.contact{left:63%;top:.7%;width:8%;height:5%}
+.phone{left:72%;top:.5%;width:15%;height:6%}
+.instagram{left:87%;top:.5%;width:4.5%;height:6%}
+.facebook{left:92%;top:.5%;width:5%;height:6%}
+/* products */
+.p1{left:2.5%;top:42%;width:19%;height:20%}
+.p2{left:23.2%;top:42%;width:20%;height:20%}
+.p3{left:44.5%;top:42%;width:20%;height:20%}
+.all{left:53%;top:37.3%;width:12%;height:5%}
+.material{left:66%;top:38%;width:32%;height:24%}
+/* atelier */
+.atelierBtn{left:5%;top:88.2%;width:18%;height:5%}
+/* floating whatsapp */
+.wa{right:.5%;bottom:.5%;width:6%;height:6.5%;border-radius:50%}
+
 @media(max-width:600px){
-  .page{width:100vw}
-  .hotspot{ /* transparent hit areas scale with the image */ }
+ .site{width:100%}
 }
 </style>
-  <meta name="google-site-verification" content="JSMN0QMk11Q3IamoAx5s6ykKZd6hjL00fd0hNvatzoo" />
 </head>
 <body>
-<div class="page">
-  <img src="assets/ana-sayfa-birebir.png" alt="Kısmet Elek ana sayfa">
-  <a class="hotspot home" href="index.html" aria-label="Ana Sayfa"></a>
-  <a class="hotspot products" href="urunler.html" aria-label="Ürünler"></a>
-  <a class="hotspot atelier" href="#atolye" aria-label="Atölye"></a>
-  <a class="hotspot about" href="hakkimizda.html" aria-label="Hakkımızda"></a>
-  <a class="hotspot contact" href="iletisim.html" aria-label="İletişim"></a>
-  <a class="hotspot phone" href="tel:+905469228020" aria-label="Telefon"></a>
-  <a class="hotspot instagram" href="#" aria-label="Instagram"></a>
-  <a class="hotspot facebook" href="#" aria-label="Facebook"></a>
-  <a class="hotspot product1" href="urunler.html" aria-label="Tef Kasnakları"></a>
-  <a class="hotspot product2" href="urunler.html" aria-label="Bendir Kasnakları"></a>
-  <a class="hotspot product3" href="urunler.html" aria-label="Davul Kasnakları"></a>
-  <a class="hotspot allproducts" href="urunler.html" aria-label="Tüm Ürünleri Gör"></a>
-  <a class="hotspot material" href="urunler.html" aria-label="Kayın ve Ceviz detayları"></a>
-  <a class="hotspot atelierbtn" href="hakkimizda.html" aria-label="Atölyeyi Keşfet"></a>
-  <a class="hotspot whatsapp" href="https://wa.me/905469228020" aria-label="WhatsApp"></a>
-</div>
+<main class="site">
+  <img class="design" src="assets/ana-sayfa-tasarim.png" alt="Kısmet Elek Ahşap Kasnak Atölyesi">
+  <a class="hit home" href="index.html" aria-label="Ana Sayfa"></a>
+  <a class="hit products" href="urunler.html" aria-label="Ürünler"></a>
+  <a class="hit atelier" href="hakkimizda.html" aria-label="Atölye"></a>
+  <a class="hit about" href="hakkimizda.html" aria-label="Hakkımızda"></a>
+  <a class="hit contact" href="iletisim.html" aria-label="İletişim"></a>
+  <a class="hit phone" href="tel:+905469228020" aria-label="0546 922 80 20"></a>
+  <a class="hit instagram" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"></a>
+  <a class="hit facebook" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"></a>
+  <a class="hit p1" href="urunler.html#tef" aria-label="Tef Kasnakları"></a>
+  <a class="hit p2" href="urunler.html#bendir" aria-label="Bendir Kasnakları"></a>
+  <a class="hit p3" href="urunler.html#davul" aria-label="Davul Kasnakları"></a>
+  <a class="hit all" href="urunler.html" aria-label="Tüm Ürünleri Gör"></a>
+  <a class="hit material" href="urunler.html#malzeme" aria-label="Kayın ve Ceviz detayları"></a>
+  <a class="hit atelierBtn" href="hakkimizda.html" aria-label="Atölyeyi Keşfet"></a>
+  <a class="hit wa" href="https://wa.me/905469228020" target="_blank" rel="noopener" aria-label="WhatsApp"></a>
+</main>
 </body>
 </html>
